@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0f172a;
+    color:  white;
+    /* padding: 14px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+nav, 
+section{
+    display:flex;
+    align-items: center;
+    gap: 14px;
+}
+
+header section img  {
+    max-width: 48px;
+    border-radius: 50%;
+    border: 2px solid cyan;
+}
+
+.whiteLink{
+    color:white
+}
+
+.greyLink{
+    color: lightgrey;
+}
+
+a{
+    text-decoration: unset;
+    font-size: 0.8em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 14px;
+}
+
+.headerText {
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.searchBar  {
+    display: flex;
+    width: 100%px;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid grey;
+    padding: 14px;
+    border-radius: 24px;
+}
+
+.searchBar:hover  {
+    border-color: transparent;
+    background: #334155;
+}
+
+.iconButton    {
+    background: transparent;
+    border:none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.iconButtonContainer    {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+input   {
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: white;
+    flex: 1;
+}
+
+.searchButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.searchButtonsContainer button{
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: #334155;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+
+}
+
+.searchButtonsContainer button:hover    {
+    border: 1px solid darkgray;
+}
+
+.languageSelection  {
+    font-size: 0.9em;
+}
+
+.languageSelection span {
+    color: cyan;
+}
+
+footer  {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > section:last-child    {
+    padding: 14px;
+
+}
+
+footer > section:last-child    {
+    border-top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footerLink     {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footerLink a   {
+    cursor: pointer;
+}
+
+@media (min-width: 540px) {
+    footer > section:last-child 
+    flex-direction:row;
+}
